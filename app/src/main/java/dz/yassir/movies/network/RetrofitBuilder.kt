@@ -27,7 +27,7 @@ object RetrofitBuilder {
             var newRequest = chain.request()
             val url = newRequest.url
                 .newBuilder()
-                .addQueryParameter("apiKey", API_KEY)
+                .addQueryParameter("api_key", API_KEY)
                 .build()
             newRequest = newRequest.newBuilder().url(url).build()
             chain.proceed(newRequest)

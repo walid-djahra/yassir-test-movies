@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="112dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_4"
+    android:layout_marginVertical="@dimen/_4"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/_6"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/movie_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_164"
+                android:contentDescription="@string/movies"
+                android:scaleType="centerCrop" />
+
+            <ProgressBar
+                android:id="@+id/loadingBar"
+                android:layout_width="@dimen/_32"
+                android:layout_height="@dimen/_32"
+                android:indeterminate="true"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4"
+            android:layout_marginTop="@dimen/_4"
+            android:text="Movie Title"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_normal" />
+
+        <RatingBar
+            android:layout_marginVertical="@dimen/_4"
+            android:id="@+id/rating_bar"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/ratingBarStyleSmall" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
