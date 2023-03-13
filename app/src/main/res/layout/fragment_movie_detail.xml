@@ -125,7 +125,8 @@
             <ImageView
                 android:layout_width="@dimen/_24"
                 android:layout_height="@dimen/_24"
-                android:layout_gravity="center"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/_16"
                 android:contentDescription="@string/movies"
                 android:src="@drawable/back" />
         </androidx.cardview.widget.CardView>
